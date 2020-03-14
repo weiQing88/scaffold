@@ -1,7 +1,5 @@
 ## 基于webpack搭建的前端工作流
 
-#### 目前仅支持react + typescript + webpack + antd 
-
 #### 运行环境
 - node 6.x 以上版本
 - Mac OSX & Windows

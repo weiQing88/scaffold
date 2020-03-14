@@ -55,8 +55,6 @@ function areEqual(prevProps, nextProps) {
       </div>)
   })
 
-//自定义判断函数
-// const Unchanged = React.memo(function( props ){}, areEqual) 
 
 
 export default function(props){

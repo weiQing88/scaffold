@@ -52,7 +52,7 @@
     - api 请求
     - components 业务公用代码片段
     - pages/* 页面
-    - util 语法糖
+    - utils 工具
 - assets/静态资源
 - public/*.html 项目html页 （默认单页应用为index.html ）
 - mock/ mock数据
@@ -67,7 +67,7 @@
 
 
 #### 支持创建工程
-- 项目 react + typescript + antd
+- 项目 react + react-router + typescript + antd
 
 
 #### 辅助功能

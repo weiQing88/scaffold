@@ -64,7 +64,8 @@
 - ```npm run test```
 
 #### 支持创建工程
-- 项目 react + react-router + typescript + antd
+- react + react-router + typescript + antd
+- ~~动态生成路由~~
 
 
 #### 辅助功能

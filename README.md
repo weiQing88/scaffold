@@ -67,9 +67,13 @@
 - PC端 react + react-router + typescript + redux + antd
 - 移动端 react + react-router + redux
 - ~~react + react-router + redux + 服务端渲染~~
+
 #### 辅助功能
 - mock数据
 - test 单元测试
 - ~~动态生成路由~~
+
+####  说明
+>  持续完善。
 
 

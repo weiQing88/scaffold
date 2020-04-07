@@ -64,12 +64,12 @@
 - ```npm run test```
 
 #### 支持创建工程
-- react + react-router + typescript + antd
-- ~~动态生成路由~~
-
+- PC react + react-router + typescript + antd
+- mobile react + react-router
 
 #### 辅助功能
 - mock数据
 - test 单元测试
+- ~~动态生成路由~~
 
 

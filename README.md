@@ -66,7 +66,7 @@
 #### 支持创建工程
 - PC端 react + react-router + typescript + antd
 - 移动端 react + react-router
-
+- ~~react + react-router + 服务端渲染~~
 #### 辅助功能
 - mock数据
 - test 单元测试

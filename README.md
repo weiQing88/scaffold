@@ -64,8 +64,8 @@
 - ```npm run test```
 
 #### 支持创建工程
-- PC react + react-router + typescript + antd
-- mobile react + react-router
+- PC端 react + react-router + typescript + antd
+- 移动端 react + react-router
 
 #### 辅助功能
 - mock数据

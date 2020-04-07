@@ -1,0 +1,44 @@
+@import './styles/home.scss';
+@import './styles/list.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html,body{
+    min-height: 100%;
+}
+
+body{
+   // background: #ddd;
+    // background-image: url(../assets/images/01.jpeg);
+    background-color: #79c8c3 !important;
+   // background-repeat: no-repeat;
+  //  background-position: bottom right;
+    color: #fff;
+}
+
+#root,
+#baseLayout{
+    min-height: 100%;
+}
+
+
+.span-item{
+    display: inline-block;
+    width: 36.6rem; 
+    height: 100px;
+    
+}
+
+.span1{
+    border: 1px solid red;
+    background: red;
+}
+.span2{
+    border: 1px solid green;
+    background: green;
+    float: right;
+}

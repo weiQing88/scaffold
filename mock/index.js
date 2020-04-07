@@ -7,7 +7,7 @@ module.exports = {
                     status: 'ok',
                     code: 0,
                     token: 'sdfsdfsdfdsf',
-                    data: { id: 1, name: '刘小夕' }
+                    data: { id: 1, name: '张某某' }
                 })
             } else {
                 return res.send({ status: 'error', code: 403 })

@@ -5,12 +5,16 @@ const baseConfig = require('./webpack.config.base');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 const ROOTPATH = process.cwd();
+const entrypoint = process.env.ENTRYPOINT || 'js';
 
+
+/**
+ *  开发环境配置项目
+ */
 module.exports = merge(baseConfig, {
     mode : 'development',
-   // module : {   rules : []  },
     optimization: {
-        minimize: false, 
+        minimize: false,
     },
     plugins  : [
         new webpack.HotModuleReplacementPlugin(), 
@@ -26,7 +30,7 @@ module.exports = merge(baseConfig, {
         compress : true,
         hot : true,
         historyApiFallback : true,
-        contentBase : 'dist/',  
+        contentBase : entrypoint == 'mobile' ? 'mDist/' : 'dist/',  // 执行环境指向 dist 目录
         before(app){
             apiMocker(app, path.resolve( ROOTPATH, 'mock/index.js' ))
         }

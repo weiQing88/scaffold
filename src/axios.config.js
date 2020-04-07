@@ -1,10 +1,10 @@
 import  axios  from 'axios';
 
-console.log('process.env.NODE_ENV', process.env.NODE_ENV );
-console.log('process.env.API_HOST', process.env.API_HOST )
+// console.log('process.env.NODE_ENV', process.env.NODE_ENV );
+// console.log('process.env.API_HOST', process.env.API_HOST )
 
 
-axios.defaults.baseURL = 'https://api.example.com';
+axios.defaults.baseURL = process.env.API_HOST;
 axios.defaults.headers.common['Authorization'] = '';
 
 // 添加请求拦截器

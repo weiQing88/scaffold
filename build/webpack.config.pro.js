@@ -2,11 +2,12 @@ const merge = require('webpack-merge');
 const baseConfig = require('./webpack.config.base');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); 
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');  
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CompressionPlugin = require('compression-webpack-plugin');
+
 
 
  const webpackConfig = merge(baseConfig, {
@@ -31,14 +32,18 @@ const CompressionPlugin = require('compression-webpack-plugin');
          new CleanWebpackPlugin({ // 不需要添加路径
               cleanOnceBeforeBuildPatterns :['**/*', '!dll', '!dll/**'], // 默认 ‘**/*’， ‘!’可排除掉不想删除的文件
          }),
-         new MiniCssExtractPlugin({  
+         new MiniCssExtractPlugin({     // ** CSS 2 **
               filename: 'css/main.[contenthash].css',
               chunkFilename: '[id].css'
          }),
-         new BundleAnalyzerPlugin()
+       //  new BundleAnalyzerPlugin()
     ],
     devtool : 'source-map', 
 });
+
+// 是否启用打包分析插件
+if( process.env.BUNDLE_ALALYSE === 'on' ) webpackConfig.plugins.push(  new BundleAnalyzerPlugin() );
+
 
 
 

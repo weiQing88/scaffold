@@ -1,0 +1,35 @@
+@keyframes fake
+{
+    0%   { opacity: 0; }
+    25% { opacity: 0.25; }
+    50%  { opacity: 0.50; }
+    75%  { opacity: 0.75; }
+    100% { opacity: 1; }
+}
+
+
+.home-page-layout{
+    height: 100%;
+    background-color:  #79c8c3;
+    h1{
+        padding: 10px 0;
+        animation: fake 3s;
+    }
+    h1>i{
+        font-size: 14px;
+    }
+    h1,h4{
+         width: 500px;
+         margin: 0 auto;
+    }
+}
+
+
+
+#zhaosi-post{
+    display: block;
+    margin: 0 auto 0;  
+    width: 500px;
+    height: auto;
+    animation: fake 3s;
+}
